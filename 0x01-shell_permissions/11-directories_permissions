@@ -1,2 +1,2 @@
 #!/bin/bash
-sudo chmod -R o+X directory
+sudo chmod -R a+X 
