@@ -1,2 +1,2 @@
 #!/bin/bash
-sudo chmod -R a+xX dir /*
+sudo chmod -R a+xX *
