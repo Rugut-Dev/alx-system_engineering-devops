@@ -1,3 +1,2 @@
 #!/bin/bash
-echo ls -al > s_cwd_content
-`
+ls -al > s_cwd_content
