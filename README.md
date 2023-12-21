@@ -13,7 +13,6 @@ Explore a rich assortment of materials designed to empower your learning experie
 - **Shell Scripts:** A diverse library of scripts illustrating practical DevOps applications via shell scripting.
 - **Documentation:** In-depth guides and tutorials demystifying the intricacies of DevOps principles and shell scripting techniques.
 - **Exercises:** Engaging hands-on tasks to reinforce and elevate your proficiency in implementing DevOps methodologies using shell scripts.
-- **Resource Library:** A handpicked selection of external resources to complement and enrich your exploration.
 
 ## Getting Started
 
