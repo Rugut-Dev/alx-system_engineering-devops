@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+# displays "Best School" 10 times
+# but for the 9th iteration, displays "Best School" and then "Hi"
+
+counter=0
+phrase="Best School"
+phrase9="Hi"
+
+while [ $counter -lt 10 ]
+do
+    if [ $counter -eq 9 ]
+    then
+	echo "$phrase9"
+    fi
+    echo "$phrase"
+    ((counter++))
+done
