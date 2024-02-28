@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # return a page containing "Hello Hlberton"
-sudo docker exec -d d5f1fad0a7d1 /bin/bash
-# cd /etc/apache2/sites_available || exit
-sudo service apache2 start
+docker exec d5f1fad0a7d1 /bin/bash
+cd /etc/apache2/sites-available || exit
+service apache2 restart
 exit
