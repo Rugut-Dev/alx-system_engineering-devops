@@ -1,0 +1,25 @@
+#!/usr/bin/env bash
+# install load balancer
+sudo apt-get -y update
+apt-get -y install haproxy
+
+server_config=\
+"
+frontend  informed_fend
+        bind *:80
+        mode http
+        default_backend informed_bend
+backend informed_bend
+        balance roundrobin
+        server 176572-web-01 54.85.203.6:80 check
+        server 176572-web-02 54.157.186.154:80 check
+"
+echo "$server_config" | sudo tee -a /etc/haproxy/haproxy.cfg
+
+echo "ENABLED=1" | sudo tee -a /etc/default/haproxy
+
+# Testing
+sudo haproxy -c -f /etc/haproxy/haproxy.cfg
+
+# Restart Nginx
+sudo service haproxy restart
